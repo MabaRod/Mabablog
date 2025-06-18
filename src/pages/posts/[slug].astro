@@ -1,0 +1,31 @@
+---
+// filepath: /home/maba/Documents/program/sites/blog-refactor/src/pages/posts/[slug].astro
+import { getCollection, getEntryBySlug, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
+import Nav from '../../components/Nav.astro';
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: {},
+  }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug('posts', slug) as CollectionEntry<'posts'> | null;
+
+if (!post) {
+  throw new Error(`Post not found for slug: ${slug}`);
+}
+
+const { Content } = await post.render();
+---
+<Layout title={post.data.title}>
+    <Nav></Nav>
+    <article>
+    <h1>{post.data.title}</h1>
+    <p>{post.data.date}</p>
+    <Content />
+  </article>
+</Layout>

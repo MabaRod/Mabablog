@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css4?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+:root{
+    --color1:#343F3E ; /*Main background color*/
+    --color2:#DCEDFF  ; /*Main foreground*/
+    --color3:#20FC8F; /*Accent color 1*/
+}
+
+.playfair-display{
+  font-family: "Sorts Mill Goudy", serif;
+  font-optical-sizing: auto;
+   font-weight: 200;
+  font-style: normal;
+}
+nav{
+    margin: auto;
+    margin-left: 0px;
+
+    background-color:var(--color1);
+}
+
+nav h1 {
+        font-size: xx-large;
+}
+
+
+body{
+    background-color:var(--color2);
+    color:var(--color1);
+    margin: 0px;
+
+}
+
+
+
+main{
+    background-color:var(--color2);
+    color:var(--color1);
+    margin-top:2dvw;
+    margin-bottom:1dvw;
+    margin-left:2dvw;
+    margin-right:2dvw;
+
+}
+
+
+main h1 {
+    font-size: xx-large;
+}
+
+main h2{
+    font-size: x-large;
+}
+
+main p{
+    font-size: large;
+}
+
+
+article{
+    margin-top:2dvw;
+    margin-bottom:1dvw;
+    margin-left:2dvw;
+    margin-right:2dvw;
+}
+
+/*Links*/
+a:visited{
+    color:var(--color1);
+}
+
+a:link{
+    
+    color:var(--color1);
+}
+
+
+a:hover{
+    color:var(--color3);
+}
+
+/*for links on main*/
+
+.plink:visited{
+    color:var(--color2);
+
+}
+
+.plink:link{
+    color:var(--color2);
+display: flex;
+justify-content:center;
+justify-items: center;
+    margin-top:auto;
+    display:inline-block;
+     margin-left: 6dvw;
+    margin-right:6dvw;
+}
+
+
+.plink:hover{
+    color:var(--color1);
+}
+
+.navtxt{
+display: flex;
+justify-content:center;
+justify-items: center;
+    margin-top:auto;
+    display:inline-block;
+     margin-left: 6dvw;
+    margin-right:6dvw;
+}
+
+#navtxt{
+    display: flex;
+justify-content:center;
+align-items: center;
+    margin-top:auto;
+    margin-left: 6dvw;
+    margin-right:6dvw;
+}
+
+
+footer{
+    margin-top:12%;
+    text-align: center;
+}
+
+.collum1{
+    float:left;
+    width:50%;
+}
+
+
+ul li{
+    font-size: x-large;
+}
+
+.column2{  
+width: 50%;
+  float: right;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.column1-x{
+    text-align:center;
+width: 50%;
+      float:left;
+      /*margin: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;*/
+} 
+
+.column2-x{
+    text-align:center;
+width: 50%;
+  float: right;
+  /*margin: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;*/
+}  

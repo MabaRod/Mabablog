@@ -1,0 +1,76 @@
+---
+import { SiteTitle } from "../consts";
+const { lang } = Astro.props;
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <Nav />
+  <main class="btme">
+    <article>
+      <h1>y, ¿Quién es este wey?</h1>
+      <p class="intro">
+        Me les presento soy Mario A.K.A el Maba Rod A.k.A el mabita o si
+        quieres, l'amour de la ta vita ;3
+      </p>
+      <p class="about">
+        Ya al chile, profecionalmente hablando soy nada, estoy estudiando
+        apenas, ingeníeria electronica para ser exactos,
+      </p>
+      <h2 class="yqe">Si pues pero, ¿de qué trata el blog?</h2>
+      <p>
+        En resumidas cuentas este blog es una pequeña dicertación de mi persona.
+        Es decir expongo un poco de mi, de mi mundo y de lo que me rodea, desde
+        ideas mías hasta rankear los mejores cafés de mi municipio. La verdad no
+        sé de muchas cosas, pero como buen ejemplo de <a
+          class="plink"
+          href="https://es.wikipedia.org/wiki/Efecto_Dunning-Kruger"
+        >
+          el efecto Dunning Kruger</a
+        >, no sé del tema pero igual no me para el oscico. No soy ningún sabio
+        ni mucho menos, solo hablo de lo que me de por hablar de vez en cuando.
+        Por esto mismo te pido que no tomes mi palabra como la gran cosa, ten
+        criterio y toma lo que te llame (dirían las del horoscopo que salen en
+        tiktok justo cuando terminaste con tu morra (maldito algoritmo (si sí
+        captaste que este es un parentesís recursivo te felicito ya me casite
+        bíen))).
+      </p>
+
+      <div class="columnas">
+        <div class="collum1">
+          <h1 style="margin-bottom: 0px;margin-top: 0px;">Mis gustos</h1>
+          <ul>
+            <li>Programar</li>
+            <ul>
+              <li>C</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Javascript</li>
+            </ul>
+            <li>Las artes</li>
+            <li>Linux</li>
+            <li>Software libre</li>
+            <li>Café, mucho café</li>
+            <li>Cigarros de clavo</li>
+          </ul>
+        </div>
+
+        <div class="collum2">
+          <h1>Mis disgustos</h1>
+          <ul>
+            <li>La gente muy fresa</li>
+            <li>La gente mamona</li>
+            <li>Los fachos</li>
+            <li>El café frio, no helado, frio.</li>
+            <li>Los cigarros rojos</li>
+            <li>Las cosas muy dulces</li>
+            <li>Ubuntu para servidores</li>
+            <li>Java</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>
