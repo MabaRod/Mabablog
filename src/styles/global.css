@@ -129,7 +129,11 @@ footer{
 
 .collum1{
     float:left;
-    width:50%;
+    width:46%;
+  border-right: solid 1px;
+  /*margin: 0px 10px 0px 10px; */
+  padding: 0px 10px 0px 10px;
+
 }
 
 
@@ -140,10 +144,7 @@ ul li{
 .column2{  
 width: 50%;
   float: right;
-  border-left: solid 1px;
-  border-right: solid 1px;
   margin: 0px 10px 0px 10px;
-  padding: 0px 10px 0px 10px;
 }
 
 .column1-x{

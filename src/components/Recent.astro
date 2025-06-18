@@ -8,12 +8,12 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<div class="column">
+<div class="collum1">
 <h1> Recent posts</h1>
 <ul>
   {sortedPosts.map((post: CollectionEntry<'posts'>) => (
     <li>
-      <a class="plink" href={`/posts/${post.slug}`}>{post.data.title}</a>
+      <a  href={`/posts/${post.slug}`}>{post.data.title}</a>
     </li>
   ))}
 </ul>
